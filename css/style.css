@@ -1,0 +1,229 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.ttf");
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mason Chronicles";
+  src: url("../fonts/4026.ttf");
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Body */
+
+::-webkit-scrollbar {
+  width: 0;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(180deg, rgba(20, 18, 24, 0) 80%, #141218 85%),
+    linear-gradient(90deg, #141218 40%, rgba(20, 18, 24, 0) 50%),
+    url(../img/background.jpg);
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  background-size: auto;
+  color: white;
+  font-family: Roboto;
+}
+
+/* Header */
+.header {
+  display: flex;
+  width: 1500px;
+  height: 70px;
+  margin: auto;
+  margin-top: 60px;
+  justify-content: space-between;
+}
+
+/* Logo */
+.logo {
+  cursor: default;
+}
+
+.logo-icon {
+  width: 100px;
+}
+
+/* Menu */
+.menu-button {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  line-height: 20px;
+  margin-right: 30px;
+  font-weight: bold;
+}
+
+.menu-button:hover {
+  color: #dddddd;
+}
+
+.navigation-block {
+  display: flex;
+  margin-right: auto;
+  margin-left: 70px;
+  align-items: center;
+}
+
+/* Social */
+.social-links {
+  display: flex;
+  align-items: center;
+}
+
+.social-link-button {
+  margin-right: 20px;
+}
+
+.social-link-icon {
+  width: 30px;
+}
+
+/*  */
+.main {
+  width: 1300px;
+  margin: auto;
+  margin-top: 90px;
+  display: flex;
+}
+
+.year {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.rating {
+  display: flex;
+}
+
+.rating-count {
+  margin-left: 10px;
+}
+
+.main-title {
+  font-family: Mason Chronicles;
+  font-weight: 500;
+  font-size: 76px;
+  line-height: 89px;
+  margin: 10px 0;
+}
+
+.about-serials {
+  display: flex;
+}
+
+.about-serials-left {
+  width: 500px;
+}
+
+.about-serials-right {
+  margin-left: 550px;
+  margin-top: 150px;
+}
+.play-button {
+  display: flex;
+  background: #9d2929;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  align-items: center;
+  padding-left: 35%;
+  position: relative;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.play-button:before {
+  content: "";
+  width: 130px;
+  height: 130px;
+  background: #9d2929;
+  opacity: 0.5;
+  border-radius: 50%;
+  animation: pulse 0.5s ease-in-out 0.5s infinite;
+  position: absolute;
+  left: -15%;
+}
+
+.play-icon {
+  position: relative;
+}
+
+.play-trailer-button {
+  display: flex;
+  width: 260px;
+  height: 60px;
+  text-decoration: none;
+  color: white;
+  background-color: #9d2929;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.series {
+  display: flex;
+  margin-top: 90px;
+}
+
+.seria {
+  margin-right: 50px;
+}
+
+.series-icon {
+  width: 200px;
+  position: relative;
+}
+
+.series-icon:after {
+  position: fixed;
+}
+
+.card-subtitle {
+  display: block;
+}
+
+.footer {
+  display: flex;
+  width: 1300px;
+  margin: auto;
+  justify-content: space-between;
+  margin-top: 100px;
+  height: 60px;
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: rgb(190, 190, 190);
+  margin-right: 30px;
+}
+
+.footer-link:last-child {
+  margin-right: 0;
+}
+
+.copyright {
+  color: rgb(190, 190, 190);
+}
