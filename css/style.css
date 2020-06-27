@@ -23,7 +23,7 @@
   box-sizing: border-box;
 }
 body {
-  background: linear-gradient(180deg, rgba(20, 18, 24, 0) 80%, #141218 85%),
+  background: linear-gradient(180deg, rgba(20, 18, 24, 0) 70%, #141218 80%),
     linear-gradient(90deg, #141218 40%, rgba(20, 18, 24, 0) 50%),
     url(../img/background.jpg);
   background-repeat: no-repeat;
